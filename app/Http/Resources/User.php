@@ -2,6 +2,7 @@
 
 namespace App\Http\Resources;
 
+use App\Http\Resources\Transaction as TransactionResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class User extends JsonResource
@@ -21,7 +22,9 @@ class User extends JsonResource
             'email' => $this->email,
             'phone_number' => $this->phone_number,
             'current_balance' => number_format($this->current_balance, 2),
-            'date_created' => date('d-m-Y h:ia', strtotime($this->created_at))
+            'date_created' => date('d-m-Y h:ia', strtotime($this->created_at)),
+            'date_updated' => date('d-m-Y h:ia', strtotime($this->updated_at)),
+            'transactions_history' => TransactionResource::collection($this->transactions)
         ];
     }
 }
