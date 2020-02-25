@@ -15,7 +15,7 @@ Fixas Lab is a simple banking application, whose API layers is developed using L
 
 ## API Endpoints
 
-base_url = http://127.0.0.1
+base_url = http://127.0.0.1:8000
 
 1. Create account by user 'base_url/api/v1/users/register'
 Body include: "name, email, password and phone_number"
