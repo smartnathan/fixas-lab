@@ -1,6 +1,6 @@
 ## Fixas Lab Banking Application
 
-Fixas Lab is simple based banking application, whose API layers is developed using Laravel and Passport for Authenticcation.
+Fixas Lab is a simple banking application, whose API layers is developed using Laravel and Passport for Authenticcation.
 
 
 ## Installation guide
